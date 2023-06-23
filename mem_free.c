@@ -2,16 +2,16 @@
 
 /**
  * bfree - a function that frees a pointer and NULLs the address
- * @ptr: address of the pointer to free
+ * @val: address of the pointer to free
  *
  * Return: 1 if freed, otherwise 0.
  */
-int bfree(void **ptr)
+int bfree(void **val)
 {
-	if (ptr && *ptr)
+	if (val && *val)
 	{
-		free(*ptr);
-		*ptr = NULL;
+		free(*val);
+		*val = NULL;
 		return (1);
 	}
 	return (0);
