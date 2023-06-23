@@ -20,18 +20,18 @@ size_t list_len(const list_t *h)
 
 /**
  * list_to_strings - a function that returns an array of strings of the list->str
- * @head: pointer to first node
+ * @adr: pointer to first node
  *
  * Return: array of strings
  */
-char **list_to_strings(list_t *head)
+char **list_to_strings(list_t *adr)
 {
-	list_t *node = head;
-	size_t i = list_len(head), j;
+	list_t *node = adr;
+	size_t i = list_len(adr), j;
 	char **strs;
 	char *str;
 
-	if (!head || !i)
+	if (!adr || !i)
 		return (NULL);
 	strs = malloc(sizeof(char *) * (i + 1));
 	if (!strs)
@@ -80,7 +80,7 @@ size_t print_list(const list_t *h)
 
 /**
  * node_starts_with - a function that returns node whose string starts with prefix
- * @node: pointer to list head
+ * @node: pointer to list adr
  * @prefix: string to match
  * @c: the next character after prefix to match
  *
@@ -102,20 +102,20 @@ list_t *node_starts_with(list_t *node, char *prefix, char c)
 
 /**
  * get_node_index - a function gets the index of a node
- * @head: pointer to list head
+ * @adr: pointer to list adr
  * @node: pointer to the node
  *
  * Return: index of node or -1
  */
-ssize_t get_node_index(list_t *head, list_t *node)
+ssize_t get_node_index(list_t *adr, list_t *node)
 {
 	size_t i = 0;
 
-	while (head)
+	while (adr)
 	{
-		if (head == node)
+		if (adr == node)
 			return (i);
-		head = head->next;
+		adr = adr->next;
 		i++;
 	}
 	return (-1);
