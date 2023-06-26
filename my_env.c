@@ -1,8 +1,9 @@
 #include "shellheader.h"
+
 /**
- * _myenv - prints the current environment
+ * _myenv - a function that prints the current environment
  * @var: Structure containing potential arguments. Used to maintain
- * constant function prototype.
+ *          constant function prototype.
  * Return: Always 0
  */
 int _myenv(info_t *var)
@@ -12,7 +13,7 @@ int _myenv(info_t *var)
 }
 
 /**
- * _getenv - gets the value of an environ variable
+ * _getenv - a function that gets the value of an environ variable
  * @var: Structure containing potential arguments. Used to maintain
  * @name: env var name
  *
@@ -34,11 +35,11 @@ char *_getenv(info_t *var, const char *name)
 }
 
 /**
- * _mysetenv - Initialize a new environment variable,
+ * _mysetenv - a function that Initialize a new environment variable,
  *             or modify an existing one
  * @var: Structure containing potential arguments. Used to maintain
  *        constant function prototype.
- * Return: Always 0
+ *  Return: Always 0
  */
 int _mysetenv(info_t *var)
 {
@@ -53,7 +54,7 @@ int _mysetenv(info_t *var)
 }
 
 /**
- * _myunsetenv - Remove an environment variable
+ * _myunsetenv - a function that Remove an environment variable
  * @var: Structure containing potential arguments. Used to maintain
  *        constant function prototype.
  * Return: Always 0
@@ -74,7 +75,7 @@ int _myunsetenv(info_t *var)
 }
 
 /**
- * populate_env_list - populates env linked list
+ * populate_env_list - a function that populates env linked list
  * @var: Structure containing potential arguments. Used to maintain
  *          constant function prototype.
  * Return: Always 0
