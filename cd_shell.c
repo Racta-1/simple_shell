@@ -9,12 +9,12 @@
  */
 int _myexit(info_t *var)
 {
-	int exitcheck;
+	int check;
 
 	if (var->argv[1]) /* If there is an exit arguement */
 	{
-		exitcheck = _erratoi(var->argv[1]);
-		if (exitcheck == -1)
+		check = _erratoi(var->argv[1]);
+		if (check == -1)
 		{
 			var->status = 2;
 			print_error(var, "Illegal number: ");
