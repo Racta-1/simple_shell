@@ -1,6 +1,6 @@
 #include "shellheader.h"
 /**
- * _erratoi - converts a string to an integer
+ * _erratoi - a function that converts a string to an integer
  * @str: the string to be converted
  * Return: 0 if no numbers in string, converted number otherwise
  *       -1 on error
@@ -28,7 +28,7 @@ int _erratoi(char *str)
 }
 
 /**
- * print_error - prints an error message
+ * print_error - a function that prints an error message
  * @var: the parameter & return var struct
  * @estr: string containing specified error type
  * Return: 0 if no numbers in string, converted number otherwise
@@ -85,7 +85,7 @@ int print_d(int input, int fd)
 }
 
 /**
- * convert_number - converter function, a clone of itoa
+ * convert_number - a function that converter function, a clone of itoa
  * @num: number
  * @base: base
  * @flags: argument flags
