@@ -1,6 +1,6 @@
 #include "shellheader.h"
 /**
- * _myhistory - displays the history list, one command by line, preceded
+ * _myhistory - a function that displays the history list, one command by line, preceded
  * with line numbers, starting at 0.
  * @var: Structure containing potential arguments. Used to maintain
  * constant function prototype.
@@ -13,7 +13,7 @@ int _myhistory(info_t *var)
 }
 
 /**
- * unset_alias - sets alias to string
+ * unset_alias - a function that sets alias to string
  * @var: parameter struct
  * @str: the string alias
  *
@@ -36,7 +36,7 @@ int unset_alias(info_t *var, char *str)
 }
 
 /**
- * set_alias - sets alias to string
+ * set_alias - a function that sets alias to string
  * @var: parameter struct
  * @str: the string alias
  *
